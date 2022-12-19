@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+   <definition name="baseLayout"  template="/WEB-INF/views/layout.jsp">
+      <put-attribute name="title" value="" />
+      <put-attribute name="top" value="/WEB-INF/views/top.jsp" />
+      <put-attribute name="body" value="/WEB-INF/views/main.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+
+  	<definition name="fixbaseLayout"  template="/WEB-INF/views/layout.jsp">
+      <put-attribute name="title" value="" />
+      <put-attribute name="top" value="/WEB-INF/views/fixnav.jsp" />
+      <put-attribute name="body" value="/WEB-INF/views/main.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+   </definition>
+  
+   <definition name="main" extends="baseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/main.jsp" />
+   </definition>
+   
+   <!-- 로그인/회원가입 등 -->
+	<definition name="login" extends="fixbaseLayout">   
+      <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+   </definition>
+   
+   	<definition name="Joininput" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/Joininput.jsp"/>
+	</definition>
+	<!-- 로그인/회원가입 등 끝-->
+	
+	<!--1대1문의  -->
+    <definition name="onenotice" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/onenotice.jsp"/>
+	</definition>
+	
+	<definition name="loginnotice" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/loginnotice.jsp"/>
+	</definition>
+	
+	<definition name="qsout" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/qsout.jsp"/>
+	</definition>
+	
+	<definition name="onedetail" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/onedetail.jsp"/>
+	</definition>	
+	
+	<definition name="oneupdate1" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/oneupdate1.jsp"/>
+	</definition>	<!-- 0928추가 -->
+	<!--1대1문의 끝  -->
+	
+	<!-- 차  -->
+	<definition name="carinput" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/carinput.jsp"/>
+	</definition>
+	
+	<definition name="carout" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/carout.jsp"/>
+	</definition>
+
+	<definition name="carout2" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/carout2.jsp"/>
+	</definition>
+
+	<definition name="carsearch" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/carsearch.jsp"/>
+	</definition>
+
+	<definition name="cardetail" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/cardetail.jsp"/>
+	</definition>
+	
+	<definition name="logincar" extends="fixbaseLayout">
+   	 	<put-attribute name="body" value="/WEB-INF/views/logincar.jsp"/>
+	</definition>
+	
+	<definition name="logincarlist" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/logincarlist.jsp"/>
+	</definition>
+	
+	<definition name="mycarlist" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/mycarlist.jsp"/>
+	</definition>
+	
+	<definition name="cardeletemid" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/cardeletemid.jsp"/>
+	</definition>
+	
+	<definition name="carupdatemid" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/carupdatemid.jsp"/>
+	</definition>
+	<definition name="compare" extends="fixbaseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/compare.jsp"/>
+	</definition>
+	
+   <definition name="sangdam" extends="fixbaseLayout">
+      <put-attribute name="body" value="/WEB-INF/views/sangdam.jsp"/>
+   </definition>
+
+   <definition name="mypage" extends="fixbaseLayout">
+      <put-attribute name="body" value="/WEB-INF/views/mypage.jsp"/>
+   </definition>
+	<!-- 차 끝  -->
+	
+	<!-- 이차어때 시작 -->
+   
+<definition name="howlist" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/howlist.jsp"/>
+</definition>
+
+
+<definition name="hosthowlist" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/hosthowlist.jsp"/>
+</definition>
+
+
+<definition name="adcarinput" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/adcarinput.jsp"/>
+</definition>
+
+
+<definition name="howdetail" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/howdetail.jsp"/>
+</definition>
+
+
+<definition name="hosthowdetail" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/hosthowdetail.jsp"/>
+</definition>
+
+
+<definition name="memberhowdetail" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/memberhowdetail.jsp"/>
+</definition>
+
+
+<definition name="loginhow" extends="fixbaseLayout">
+	<put-attribute name="body" value="/WEB-INF/views/loginhow.jsp"/>
+</definition>
+
+   <!-- 이차어때 끝 -->
+   
+   <!-- 공지사항 -->
+    <definition name="hostboardinput" extends="fixbaseLayout">
+     	 <put-attribute name="body" value="/WEB-INF/views/hostboardinput.jsp"/>
+   	</definition>
+     <definition name="board" extends="fixbaseLayout">
+     	 <put-attribute name="body" value="/WEB-INF/views/board.jsp"/>
+   	</definition>
+    <definition name="hostboard" extends="fixbaseLayout">
+     	 <put-attribute name="body" value="/WEB-INF/views/hostboard.jsp"/>
+   	</definition>
+ 	<definition name="hostboarddetail" extends="fixbaseLayout">
+     	 <put-attribute name="body" value="/WEB-INF/views/hostboarddetail.jsp"/>
+   	</definition>
+   	 <definition name="hostboarddetail2" extends="fixbaseLayout">
+     	 <put-attribute name="body" value="/WEB-INF/views/hostboarddetail2.jsp"/>
+   	</definition>
+   	 <definition name="hostboardinput1" extends="fixbaseLayout">
+     	 <put-attribute name="body" value="/WEB-INF/views/hostboardinput1.jsp"/>
+   	</definition>
+   <!-- 공지사항 끝  -->
+      <!-- 선호차량 -->
+   <definition name="preferout" extends="fixbaseLayout">
+       <put-attribute name="body" value="/WEB-INF/views/preferout.jsp"/>
+   </definition>
+ </tiles-definitions>
